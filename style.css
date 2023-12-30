@@ -14,7 +14,7 @@ body {
     background-image: url(https://i.pinimg.com/564x/68/ec/d8/68ecd80ba97ee4d08898f8b2e7d05f6b.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    margin-bottom: 30px;
+    background-attachment: fixed;
 }
 
 body::before {
