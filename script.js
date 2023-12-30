@@ -14,10 +14,10 @@ function Transform() {
     const SelectValue = document.querySelector(".select-Value").value
 
     console.log(SelectValue)
-    const DollarToday = 4.85
-    const EuroToday = 6.00
-    const LibraToday = 4.00
-    const BitcoinToday = 3.00
+    const DollarToday = 4.86
+    const EuroToday = 5.37
+    const LibraToday = 6.19
+    const BitcoinToday = 203.947
     
     if (SelectValue == "dolar") {
 
