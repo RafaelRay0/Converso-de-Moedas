@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Conversor de Moedas</title>
+</head>
+
+<body>
+
+    <img src="https://media.giphy.com/media/RtwIk7t9sMXnnYT50k/giphy.gif" alt="logo-Cifrão" class="Cifrão">
+
+    <main>
+
+        <label>
+            Coverter <b>de</b>
+            <select>
+                <option class="Dentro-do-option">R$ Real brasileiro</option>
+            </select>
+        </label>
+
+        <label>
+            Coverter <b>para</b>
+            <select class="select-Value" onchange="changeCurrency()">
+
+                <option value="dolar">US$ Dólar americano</option>
+                <option value="euro">€ Euro</option>
+
+            </select>
+        </label>
+        <label>
+            Valor
+            <input placeholder="R$ 10.000,00" class="input-valor">
+        </label>
+
+        <button onclick="Transform()" class="button-convert">Converter</button>
+
+        <section>
+            <div>
+                <img src="imagens/brasil 2.png" alt="Logo-Brasil" class="Logo-Brasil">
+                <p class="Real-do-brasil">Real</p>
+                <p class="Valor-Brasil">R$ 0.00</p>
+            </div>
+            <img src="imagens/Indicador.png"
+                alt="Logo-indincador-converção" class="seta">
+            <div>
+                <img src="imagens/Dolar.png" alt="Logo-Estados-Unidos" class="Logo-Estados">
+                <p class="Currency-Name">Dólar Americano</p>
+                <p class="Valor-do-Dolar">US$ 0.00</p>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

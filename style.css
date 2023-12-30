@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    outline: none; 
+   
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+
+    background-image: url(https://i.pinimg.com/564x/68/ec/d8/68ecd80ba97ee4d08898f8b2e7d05f6b.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 30px;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.688);
+    z-index: -1;
+  }
+
+.Cifrão {
+
+    width: 10vw;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+}
+
+main {
+
+    width:375px;
+    border-radius:20px;
+    background-color: #F4F4F4 ;
+    margin: 0px auto;
+    padding: 44px 24px 23px;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+
+   color: #777777;
+   font-weight: 400;
+   font-size: 14px;
+   margin-bottom: 20px;
+   outline: none;
+
+}
+
+input {
+
+    width: 100%;
+    height: 48px;
+    border-radius: 4px;
+    padding-left: 10px;
+    margin-top: 5px;
+    border: 1px;
+    border: 1px solid #BBBBBB
+}
+
+select {
+
+    width: 100%;
+    height: 48px;
+    padding-left: 10px;
+    margin-top: 5px;
+    border-radius: 4px;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 18px;
+    letter-spacing: 0em;
+    border: 1px solid #bbbbbb;
+    background-color:#ffffff ;
+    color: #555555;
+}
+
+
+button {
+    margin: 20px 0px;
+    width: 100%;
+    height: 48px;
+    font-size: 18px;
+    border: 2px solid #03881290 ;
+    border-radius: 5px;
+    background: #0ea920ad;
+    color: #ffffff;
+    
+}
+
+button:hover {
+
+    opacity: .8;
+}
+
+button:active {
+
+    opacity: .4;
+}
+
+section {
+
+    width: 100%;
+    height: 276px;
+    border-radius: 20px;
+    border: 1px;
+    border: 1px solid #777777;
+}
+
+.Logo-Brasil {
+
+    display: block;
+    margin:10px auto 0px ;
+}
+
+.Real-do-brasil {
+  
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #777777;
+
+}
+
+.Valor-Brasil {
+
+    height: 18px;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: center;
+    color:  #555555;
+}
+
+.seta {
+
+    width: 35px;
+    height: 49px;
+    display: block;
+    margin: 10px auto;
+}
+
+.Logo-Estados {
+
+    display: block;
+    margin:0px auto 0px ;
+}
+
+.Currency-Name {
+
+    height: 18px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #777777;
+}
+
+.Valor-do-Dolar {
+
+    height: 18px;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #555555 ;
+
+}
