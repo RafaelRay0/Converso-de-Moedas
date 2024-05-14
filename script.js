@@ -3,22 +3,23 @@
 const buttonconvert = document.querySelector
     (".button-convert")
 
-function Transform() {
+async function Transform() {
 
     const InputValue = document.querySelector("input").value
-
     const ValordoBrasil = document.querySelector(".Valor-Brasil")
-
     const ValordoDolar = document.querySelector(".Valor-do-Dolar")
-    
     const SelectValue = document.querySelector(".select-Value").value
 
-    console.log(SelectValue)
-    const DollarToday = 4.86
-    const EuroToday = 5.37
+    const data = await fetch("https://economia.awesomeapi.com.br/last/USD-BRL,EUR-BRL,BTC-BRL").then(response => response.json())
+
+    console.log(data)
+    const DollarToday = data.USDBRL.low
+    const EuroToday = data.EURBRL.low
+    const BitcoinToday = data.BTCBRL.low
     const LibraToday = 6.19
-    const BitcoinToday = 203.947
     
+
+
     if (SelectValue == "dolar") {
 
         ValordoDolar.innerHTML = new Intl.NumberFormat("en-US", {
@@ -43,7 +44,7 @@ function Transform() {
             style: "currency",
             currency: "GBP"
         }).format(InputValue / LibraToday)
-        
+
     }
 
     if (SelectValue == "bitcoin") {
@@ -52,13 +53,13 @@ function Transform() {
             style: "currency",
             currency: "BTC"
         }).format(InputValue / BitcoinToday)
-        
+
     }
 
-        ValordoBrasil.innerHTML = new Intl.NumberFormat("pt-BR", {
-            style: "currency",
-            currency: "BRL"
-        }).format(InputValue)
+    ValordoBrasil.innerHTML = new Intl.NumberFormat("pt-BR", {
+        style: "currency",
+        currency: "BRL"
+    }).format(InputValue)
 
 }
 
@@ -68,39 +69,39 @@ function changeCurrency() {
 
     const SelectValue = document.querySelector(".select-Value").value
     const CurrencyName = document.querySelector(".Currency-Name")
-    const LogoEstadosUnidos = document. querySelector(".Logo-Estados")
-    
+    const LogoEstadosUnidos = document.querySelector(".Logo-Estados")
 
-    if(SelectValue == "euro") {
+
+    if (SelectValue == "euro") {
 
         CurrencyName.innerHTML = "Euro"
-        
-        LogoEstadosUnidos.src= "imagens/Euro.png"
-        
+
+        LogoEstadosUnidos.src = "imagens/Euro.png"
+
     }
 
-    if(SelectValue == "dolar") {
+    if (SelectValue == "dolar") {
 
         CurrencyName.innerHTML = "Dólar americano"
 
-        LogoEstadosUnidos.src= "imagens/Dolar.png"
-        
+        LogoEstadosUnidos.src = "imagens/Dolar.png"
+
     }
-    
-    if(SelectValue == "libra") {
+
+    if (SelectValue == "libra") {
 
         CurrencyName.innerHTML = "Libra"
 
-        LogoEstadosUnidos.src= "imagens/libra.png"
-        
+        LogoEstadosUnidos.src = "imagens/libra.png"
+
     }
 
-    if(SelectValue == "bitcoin") {
+    if (SelectValue == "bitcoin") {
 
         CurrencyName.innerHTML = "Bitcoin"
 
-        LogoEstadosUnidos.src= "imagens/bitcoin.png"
-        
+        LogoEstadosUnidos.src = "imagens/bitcoin.png"
+
     }
 
     Transform()
