@@ -1,6 +1,4 @@
-<p>Projeto de um conversor de moedas, onde convertemos a moeda brasileira com moedas estrangeiras</p>
-<br>
-<img src="https://1drv.ms/i/c/d08bdccfa69c6155/EcahMvd1QadNshYhMGpaz-oBVzlSTLiJKLfjWkfJQB_uzg?e=Rlb564" alt="Logo-JavaScript" /> 
+<p>Projeto de um conversor de moedas, onde convertemos a moeda brasileira com moedas estrangeiras.</p>
 <br>
 Projeto feito com:
 <br>
